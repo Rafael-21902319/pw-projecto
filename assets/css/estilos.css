@@ -1,12 +1,10 @@
 /* NAVBAR */
 
 main {
-    margin-top: 40px;
     grid-area: main;
 }
 
 aside {
-    margin-top: 40px;
     grid-area: aside;
 }
 
@@ -14,9 +12,6 @@ aside {
     grid-area: menu;
     background-color: rgb(188, 188, 192);
     overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 .navbar a {
