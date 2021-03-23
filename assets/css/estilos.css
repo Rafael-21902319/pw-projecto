@@ -1,11 +1,26 @@
 /* NAVBAR */
 
 main {
+    margin:20px;
     grid-area: main;
 }
 
+main img {
+    height: 150px;
+}
+
 aside {
+    margin:20px;
     grid-area: aside;
+}
+
+aside ul{
+    
+}
+
+.maisPesquisados {
+    margin:20px;
+    grid-area: maisPesquisados;
 }
 
 .navbar {
@@ -37,7 +52,8 @@ aside {
     display: grid;
     grid-template-areas: 
         'menu menu menu'
-        'main main aside';
+        'main main aside'
+        'maisPesquisados maisPesquisados aside';
 }
 
 body {
