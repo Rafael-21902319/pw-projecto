@@ -1,16 +1,31 @@
 /* NAVBAR */
 
 main {
+    margin:20px;
     grid-area: main;
 }
 
+main img {
+    height: 150px;
+}
+
 aside {
+    margin:20px;
     grid-area: aside;
+}
+
+aside ul{
+    
+}
+
+.maisPesquisados {
+    margin:20px;
+    grid-area: maisPesquisados;
 }
 
 .navbar {
     grid-area: menu;
-    background-color: rgb(188, 188, 192);
+    background-color:#8E8D8A;
     overflow: hidden;
 }
 
@@ -24,12 +39,12 @@ aside {
 }
   
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #D8C3A5;
     color: black;
 }
 
 .navbar a.active {
-    background-color: #3a3cbd;
+    background-color: #C5AE8E;
     color: white;
 }
 
@@ -37,10 +52,12 @@ aside {
     display: grid;
     grid-template-areas: 
         'menu menu menu'
-        'main main aside';
+        'main main aside'
+        'maisPesquisados maisPesquisados aside';
 }
 
 body {
     margin: 0;
     font-family: 'Handlee', cursive;
+    background-color:#EAE7DC;
 }
