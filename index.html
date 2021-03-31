@@ -3,101 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Rafael && Tiago Santos">
+    <meta name="author" content="Rafael Ribeiro && Tiago Santos">
     <meta name="keywords" content="Lusofona movies">
     <meta name="description" content="Lusofona movies search machine">
-    <title>LMSM</title>
+    <title>Movie database</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 </head>
-<body class="grid-container">
-    <nav class="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">Plataformas Streaming</a>
-        <a href="#contact">Favoritos</a>
-        <a href="#about">Calendário</a>
+<body>
+    <nav>
+        <ul class="menu" id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="pesquisa.html">Pesquisa</a></li>
+            <li><a href="calendario.html">Calendário</a></li>
+            <li><a href="plataformas.html">Onde ver</a></li>
+        </ul>
+        <ul class="menu" id="login">
+            <li><a href="login.html">Login</a></li>
+        </ul>
     </nav>
     <main>
-        <h1>Lançamentos da semana</h1>
-        <img src="assets/images/doors.jpg">
-        <img src="assets/images/malibu.jpg">
+        <h1>
+            Lançamentos da semana
+        </h1>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/images/doors.jpg" alt="Avatar">
+                <div class="cardLabel">
+                    <h4><b>Doors</b></h4>
+                </div>
+            </div> 
+            <div class="card">
+                <img src="assets/images/malibu.jpg" alt="Avatar">
+                <div class="cardLabel">
+                    <h4><b>Malibu</b></h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/wrath_of_man.jpg" alt="Avatar">
+                <div class="cardLabel">
+                    <h4><b>Wrath of man</b></h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/pulp_fiction.jpg" alt="Avatar">
+                <div class="cardLabel">
+                    <h4><b>Pulp Fiction</b></h4>
+                </div>
+            </div>
+        </div>
     </main>
-    <section class="maisPesquisados">
-        <h1>Mais pesquisados</h1>
+    <div class="submain">
+        <h1>
+            Mais pesquisados
+        </h1>
         <ul>
-            <li>The Matrix</li>
-            <li>Star Wars episode IV</li>
-            <li>Lord of the rings: The two towers</li>
-        </ul> 
-    </section>
-    <aside>
-        <h1>Top 10 mais famosos</h1>
-        <ul>
-            <li>The Matrix</li>
-            <li>Star Wars episode IV</li>
-            <li>Lord of the rings: The two towers</li>
+            <li>The Shawshank Redemption</li>
             <li>The Godfather</li>
-            <li>Schindler's list</li>
+            <li>The Godfather: Part II</li>
+            <li>The Dark Knight</li>
+        </ul>
+    </div>
+    <aside>
+        <h1>Top 10</h1>
+        <ul>
+            <li>The Shawshank Redemption</li>
+            <li>The Godfather</li>
+            <li>The Godfather: Part II</li>
+            <li>The Dark Knight</li>
+            <li>12 Angry Men</li>
+            <li>Schindler's List</li>
+            <li>The Lord of the Rings: The Return of the King</li>
             <li>Pulp Fiction</li>
-            <li>Fight Club</li>
-            <li>Forest Gump</li>
-            <li>Seven</li>
-            <li>The Silence of the lambs</li>
-        </ul> 
+            <li>Il buono, il brutto, il cattivo</li>
+            <li>The Lord of the Rings: The Fellowship of the Ring</li>
+        </ul>
     </aside>
+    <footer>
+        <h3>Rafael Ribeiro</h3>
+        <h3>Tiago Santos</h3>
+    </footer>
 </body>
-</html>
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Rafael && Tiago Santos">
-    <meta name="keywords" content="Lusofona movies">
-    <meta name="description" content="Lusofona movies search machine">
-    <link rel="stylesheet" href="assets/css/estilos.css">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            text-align: center;
-        }
-
-        .grid-item {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            font-size: 30px;
-            text-align: center;
-        }
-    </style>
-    <title>renomear-Home</title>
-</head>
-
-<body>
-    <header class="grid-container">
-        <nav class="navbar">
-            <a class="grid-item" href="http://">
-                Home
-            </a>
-            <a href="http://">
-                Lista de streamers
-            </a>
-            <a class="box">
-                Favoritos
-            </a>
-            <a href="http://">
-                Calendário
-            </a>
-        </nav>
-    </header>
-</body>
-
 </html>
