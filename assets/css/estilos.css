@@ -55,6 +55,10 @@ main h1 {
     font-size: 35px;
 }
 
+main img {
+    max-width:100%;
+}
+
 .submain {
     grid-area:submain;
     background-color:#E9E9E9;
@@ -93,6 +97,36 @@ aside ul {
 
 aside ul li {
     text-shadow: 1px 1px #88BBD6;
+}
+
+aside table {
+    width: 100%;
+    font-size: 18px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    border: 1px solid #88BBD6;
+    border-bottom: 2px solid #88BBD6;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+                0px 10px 20px rgba(0,0,0,0.05),
+                0px 20px 20px rgba(0,0,0,0.05),
+                0px 30px 20px rgba(0,0,0,0.05);
+}
+
+aside table tr:nth-child(odd){
+    background: #d2ebf7;
+}
+
+aside table tr:nth-child(even){
+    background: #e0f0f8;
+}
+
+aside table th {
+    height: 30px;
+    background-color: #88BBD6;
+}
+
+aside table tr:hover {
+    background-color: #E9E9E9;
 }
 
 footer {
