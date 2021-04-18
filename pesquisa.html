@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,12 @@
     <meta name="description" content="Lusofona movies search machine">
     <title>Movie database</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body class="bodyPes">
     <nav>
         <ul class="menu" id="menu">
@@ -26,19 +29,59 @@
         </ul>
     </nav>
     <main>
-        
+
     </main>
     <div class="submain">
-        
+
     </div>
     <aside>
         <div id="pesquisaNome">
-            <input type="text" id="txtPesquisa" placeholder="Pesquisa pelo nome"/>
-        </div>    
+            <form class="search_by_name" action="index.html">
+                <input type="text" placeholder="Nome" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <form action="index.html" class="checkBox">
+            <nav class="navAside">
+                <ul>
+                    <li><a href="#">Género</a>
+                        <ul>
+                            <li><a href="#">Ação</a>
+                                <input type="checkbox" id="acao" name="acao" value="Ação">
+                            </li>
+                            <li><a href="#">Comédia</a>
+                                <input type="checkbox" id="comedia" name="comedia" value="Comédia">
+                            </li>
+                            <li><a href="#">Romance</a>
+                                <input type="checkbox" id="romance" name="romance" value="Romance">
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Data de estreia</a>
+                        <ul>
+                            <input type="date" name="search">
+                        </ul>
+                    </li>
+                    <li><a href="#">IMDB rate</a>
+                        <ul>
+                            <form >
+                                <input type="range" min="0" max="10"
+                                name="taxa" value="0"
+                                oninput="taxaN.value = parseInt(taxa.value)">
+                                <output name="taxaN" for="taxa">0</output>
+                            </form>                                
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </form>
+        <input class="inputSubmit" type="submit" value="Submit">
     </aside>
+    
     <footer>
         <h3>Rafael Ribeiro</h3>
         <h3>Tiago Santos</h3>
     </footer>
 </body>
+
 </html>

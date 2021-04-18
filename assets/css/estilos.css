@@ -291,3 +291,68 @@ border-right: 1px solid #FFF;
         padding:0px;
     }
 }
+  
+  /* Style the search field */
+  form.search_by_name input[type=text] {
+    margin: 30px 0;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.search_by_name button {
+    margin: 30px 0;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.search_by_name button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.search_by_name::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .checkBoxs{
+    float: left;
+  }
+
+  .checkBox{
+      text-align: left;
+  }
+.navAside{
+ background-color: #CDCDCD;
+} 
+
+.navAside ul > li {
+    display: block;
+    position: relative;
+    }
+.navAside > ul > li ul {
+    display: none;
+    }
+    
+
+.navAside > ul > li ul {display: none;}
+.navAside > ul li:hover > ul {display:block;}
+
+.inputSubmit{
+    display: block; 
+    margin: 1rem auto; 
+    padding: 0.5rem 1rem;
+}
