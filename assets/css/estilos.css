@@ -245,10 +245,15 @@ body > * {
         padding:0px;
     }
 }
+
+.secondCards {
+    margin-top:50px;
+}
  .cards {
     display: flex;
     justify-content: space-evenly;
  }
+
 .card {
     margin-top:20px;
     padding: 15px;
