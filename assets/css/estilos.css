@@ -291,10 +291,10 @@ body > * {
 }
 
 .sub_nav ul a{
-padding: 3px 10px 3px 22px;
-text-decoration: none;
-color: #FFF;
-border-right: 1px solid #FFF;
+    padding: 3px 10px 3px 22px;
+    text-decoration: none;
+    color: #FFF;
+    border-right: 1px solid #FFF;
 }
 
 .cardCal {
