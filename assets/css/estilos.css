@@ -121,6 +121,10 @@ main table tr:hover {
     text-shadow: 1px 1px #88BBD6;
 }
 
+.submain p {
+    font-size: 18px;
+}
+
 aside {
     grid-area:aside;
     background-color:#CDCDCD;
@@ -237,6 +241,10 @@ body > * {
         justify-content: space-evenly;
         flex-direction: column;
     }
+
+    #video {
+        margin-top: 20px;
+    }
 }
 
 @media (min-width:601px) {
@@ -256,7 +264,11 @@ body > * {
         padding:0px;
     }
 
-
+    #video {
+        width: 550px;
+        height: 400px;
+        margin-top: 20px;
+    }
 }
 
 .secondCards {
@@ -332,24 +344,6 @@ body > * {
 /* On mouse-over, add a deeper shadow */
 .cardCal:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-@media (min-width:601px) {
-    .bodyPes {
-        display:grid;
-        width:100vw;
-        height:100vh;
-        grid-template-rows:100px 1fr 1fr 100px;
-        grid-template-columns:1fr 3fr 1fr;
-        grid-template-areas:
-            'menu    menu    menu'
-            'aside    main    main'
-            'aside submain submain'
-            'footer  footer  footer';
-        grid-gap:0vw;
-        background-color:#C5C6C7;
-        padding:0px;
-    }
 }
   
   /* Style the search field */
