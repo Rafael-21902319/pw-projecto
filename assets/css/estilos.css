@@ -210,8 +210,8 @@ body > * {
         display:grid;
         width:100vw;
         height:100vh;
-        grid-template-columns:1fr;
-        grid-template-rows:9vw 7vw 1fr 7vw 7vw;
+        grid-template-columns:100vw;
+        grid-template-rows:50px 1fr 1fr 1fr 50px;
         grid-template-areas:
             'menu'
             'main'
@@ -222,9 +222,20 @@ body > * {
         background-color:rgb(0, 0, 0);
         padding:10px;
     }
-    
-    ul li {
-        display:inline-block;
+
+    nav {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
     }
 }
 
@@ -244,6 +255,8 @@ body > * {
         background-color:#C5C6C7;
         padding:0px;
     }
+
+
 }
 
 .secondCards {
